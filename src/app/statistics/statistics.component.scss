@@ -1,0 +1,76 @@
+section {
+  background-color: hsl(0, 0%, 98%);
+  padding-bottom: 75px;
+  padding-top: 50px;
+}
+
+.container {
+  margin: auto;
+  text-align: center;
+  width: 80%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.items {
+  display: flex;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+h1 {
+  color: hsl(260, 8%, 14%);
+  font-size: 40px;
+  font-weight: 700;
+  padding-top: 75px;
+}
+
+p {
+  color: hsl(257, 7%, 63%);
+  font-weight: 500;
+  margin: auto;
+  padding-bottom: 75px;
+  width: 50%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.item-1 {
+  margin-top: 0;
+}
+
+.item-2 {
+  margin-top: 50px;
+  @media screen and (max-width: 768px) {
+    margin-top: 0;
+  }
+}
+
+.item-3 {
+  margin-top: 100px;
+  @media screen and (max-width: 768px) {
+    margin-top: 0;
+  }
+}
+
+hr {
+  background-color: hsl(180, 66%, 49%);
+  border: none;
+  bottom: 200px;
+  height: 10px;
+  position: relative;
+  width: 70%;
+  @media screen and (max-width: 768px) {
+    bottom: 700px;
+    left: 6px;
+    height: 370px;
+    width: 10px;
+  }
+}
+
+app-statistics-item {
+  z-index: 1;
+}

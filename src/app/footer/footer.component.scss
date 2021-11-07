@@ -1,0 +1,64 @@
+section {
+  background-color: hsl(255, 11%, 22%);
+}
+
+.container {
+  margin: auto;
+  width: 80%;
+  @media screen and (max-width: 768px) {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  @media screen and (max-width: 768px) {
+    align-items: center;
+  }
+}
+
+.buttons {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  @media screen and (max-width: 768px) {
+    align-items: center;
+  }
+}
+
+.mat-button {
+  background-color: hsl(255, 11%, 22%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Poppins";
+  font-weight: 500;
+  &:hover {
+    color: hsl(180, 66%, 49%);
+  }
+}
+
+h1 {
+  color: hsl(0, 0%, 100%);
+  margin: 10px 15px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+::ng-deep .mat-grid-tile-content {
+  align-items: flex-start!important;
+  padding-top: 30px!important;
+  @media screen and (max-width: 768px) {
+    align-items: center!important;
+  }
+}
+
+svg {
+  margin: 10px 5px;
+  &:hover {
+    cursor: pointer;
+    path {
+      fill: hsl(180, 66%, 49%);
+    }
+  }
+}

@@ -1,0 +1,13 @@
+<form>
+  <mat-form-field appearance="fill">
+    <div class="input-block">
+      <input name="link" type="email" matInput placeholder="Shorten a link here..." [(ngModel)]="link" [ngClass]="{'error': error}">
+      <p *ngIf="error && mobile">Please add a link</p>
+      <button type="button" mat-button (click)="onClick(link)">Shorten It!</button>
+    </div>
+    <p *ngIf="error && !mobile">Please add a link</p>
+  </mat-form-field>
+</form>
+<div *ngFor="let link of links">
+  <app-shorten-link (copyEvent)="onCopy($event)" [fullLink]="link.fullLink" [shortenedLink]="link.shortenedLink" [copied]="link.copied"></app-shorten-link>
+</div>

@@ -1,0 +1,62 @@
+section {
+  background-image: url("../../assets/illustration-working.svg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 483px 437px;
+  @media screen and (max-width: 768px) {
+    background-image: url("../../assets/illustration-working.svg");
+    background-position: top center;
+    background-size: contain;
+  }
+}
+
+.container {
+  height: 600px;
+  margin: auto;
+  width: 80%;
+  @media screen and (max-width: 768px) {
+    height: 500px;
+    padding-top: 350px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+h1 {
+  color: hsl(260, 8%, 14%);
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+  padding-top: 50px;
+  width: 50%;
+  @media screen and (max-width: 768px) {
+    margin: auto;
+    width: 90%;
+  }
+}
+
+p {
+  color: hsl(257, 7%, 63%);
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 15px;
+  width: 50%;
+  @media screen and (max-width: 768px) {
+    margin: auto;
+    width: 90%;
+  }
+}
+
+.mat-button {
+  background-color: hsl(180, 66%, 49%);
+  border-radius: 30px;
+  color: hsl(0, 0%, 100%);
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 30px;
+  &:hover {
+    background-color: hsl(180, 66%, 49%, 50%);
+    color: hsl(0, 0%, 100%);
+  }
+}

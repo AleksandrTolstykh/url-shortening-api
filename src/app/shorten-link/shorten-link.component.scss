@@ -1,0 +1,59 @@
+section {
+  background-color: hsl(0, 0%, 98%);
+  padding: 20px 0;
+}
+
+div {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+  top: 100px;
+  width: 80%;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+ span {
+   align-items: center;
+   display: flex;
+   @media screen and (max-width: 768px) {
+     align-items: flex-start;
+     flex-direction: column;
+   }
+ }
+
+ a {
+   color: hsl(180, 66%, 49%);
+   text-decoration: none;
+ }
+
+.mat-button {
+   background-color: hsl(180, 66%, 49%);
+   border-radius: 10px;
+   color: hsl(0, 0%, 100%);
+   font-family: "Poppins";
+   font-weight: 700;
+   height: 40px;
+   margin-left: 25px;
+   &:hover {
+     background-color: hsl(180, 66%, 49%, 50%);
+     color: hsl(0, 0%, 100%);
+   }
+   @media screen and (max-width: 768px) {
+     margin: auto;
+     width: 100%;
+   }
+ }
+
+ .copied-button {
+   background-color: hsl(257, 27%, 26%);
+   &:hover {
+     background-color: hsl(257, 27%, 26%);
+     cursor: auto;
+   }
+ }

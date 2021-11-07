@@ -1,0 +1,38 @@
+.mat-toolbar {
+  background-color: transparent;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+div {
+  align-items: center;
+  display: flex;
+  .mat-button {
+    color: hsl(257, 7%, 63%);
+    font-family: "Poppins";
+    font-weight: 700;
+    &:hover {
+      color: hsl(260, 8%, 14%);
+    }
+  }
+  .sign-up-button {
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 30px;
+    color: hsl(0, 0%, 100%);
+    &:hover {
+      background-color: hsl(180, 66%, 49%, 50%);
+      color: hsl(0, 0%, 100%);
+    }
+  }
+}
+
+::ng-deep {
+  .mat-button-focus-overlay {
+    background-color: transparent;
+  }
+}

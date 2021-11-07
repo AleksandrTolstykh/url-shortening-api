@@ -1,0 +1,10 @@
+<section>
+  <div>
+    <p>{{fullLink}}</p>
+    <span>
+      <a id="link" [href]="shortenedLink">{{shortenedLink}}</a>
+      <button *ngIf="!copied" mat-button (click)="onClick($event)">Copy</button>
+      <button *ngIf="copied" mat-button class="copied-button">Copied!</button>
+    </span>
+  </div>
+</section>

@@ -1,0 +1,48 @@
+div {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  height: 250px;
+  margin: 10px;
+  padding: 30px;
+  text-align: left;
+  @media screen and (max-width: 1024px) {
+    height: 400px;
+  }
+  @media screen and (max-width: 768px) {
+    height: 200px;
+    margin: 30px auto;
+    text-align: center;
+    width: 90%;
+  }
+}
+
+.image {
+  background-color: hsl(257, 27%, 26%);
+  border-radius: 50%;
+  position: relative;
+  top: -85px;
+  width: 30px;
+  height: 30px;
+  @media screen and (max-width: 768px) {
+    margin: auto;
+    top: -70px;
+  }
+}
+
+img {
+  margin: -5px 0 0 -5px;
+}
+
+h1 {
+  color: hsl(260, 8%, 14%);
+  font-weight: 700;
+  position: relative;
+  top: -85px;
+}
+
+p {
+  color: hsl(257, 7%, 63%);
+  font-weight: 500;
+  position: relative;
+  top: -85px;
+}
